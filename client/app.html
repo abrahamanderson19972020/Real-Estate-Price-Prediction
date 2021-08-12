@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> California House Price Prediction in Dollars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Longitude</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="100">
+    <h2>Latitude</h2>
+    <input class="area"  type="text" id="uiSqfm" class="floatLabel" name="Squareft" value="100">
+    <h2>House Age</h2>
+    <input class="area"  type="text" id="uiSqfl" class="floatLabel" name="Squareft" value="10">
+    <h2>Median Income of Area</h2>
+    <input class="area"  type="text" id="uiSqfk" class="floatLabel" name="Squareft" value="1000">
+    <h2>House Population</h2>
+    <input class="area"  type="text" id="uiSqfs" class="floatLabel" name="Squareft" value="10">
+	<h2>Ocean Proximity in KM</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5 or more</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Number of Rooms</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-room-1" name="uiBathrooms" value="1"/>
+		<label for="radio-room-1">1</label>
+		<input type="radio" id="radio-room-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-room-2">2</label>
+		<input type="radio" id="radio-room-3" name="uiBathrooms" value="3"/>
+		<label for="radio-room-3">3</label>
+		<input type="radio" id="radio-room-4" name="uiBathrooms" value="4"/>
+		<label for="radio-room-4">4</label>
+		<input type="radio" id="radio-room-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+	</div>
+    <h2>Number of Bedrooms</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bedroom-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bedroom-1">1</label>
+		<input type="radio" id="radio-bedroom-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bedroom-2">2</label>
+		<input type="radio" id="radio-bedroom-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bedroom-3">3</label>
+		<input type="radio" id="radio-bedroom-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bedroom-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+	</div>
+
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
